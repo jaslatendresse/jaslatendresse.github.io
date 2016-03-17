@@ -62,12 +62,13 @@
             var imgCurrent = 1;
             var caption = ["March 17, 2016", "March 16, 2016"];
         function slide() {
+
             if(imgCurrent >= imgLength) {
-                    imgCurrent = 1;
+                    imgCurrent = 0;
             }
-
-
-                document.imageslide.src = imgSlide[imgCurrent];
+                document.getElementById("date").style.display = 'none';
+                document.getElementById("mydate").innerHTML = caption[imgCurrent];
+                document.getElementById("picture").src = imgSlide[imgCurrent];
                 imgCurrent++;
 
             }
@@ -379,8 +380,8 @@
                     <h3 id="pics">Picture of the day</h3>
                     <span id="displaypicscon">
                         <p id="date"></p>
-                        <p id ="mydiv"></p><br>
-                            <img name="imageslide" src="./pic2.png" alt="img"><br><br><br>
+                        <p id ="mydate"></p><br>
+                            <img name="imageslide" src="./pic2.png" alt="img" id="picture"><br><br><br><br>
 
                     <span id="displaybuttons">
                         <a href="javascript:void(0)" onclick="slide();">Previous</a>
