@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<head>
+    <title>TWD</title>
+
+    <script type="text/javascript">
+
+        function showRemaining() {
+            var end = new Date('03/20/2016 9:00 PM');
+            var _second = 1000;
+            var _minute = _second * 60;
+            var _hour = _minute * 60;
+            var _day = _hour * 24;
+            var timer;
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+            return;
+            }
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+
+        document.getElementById('countdown').innerHTML = days + 'days ';
+        document.getElementById('countdown').innerHTML += hours + 'hrs ';
+        document.getElementById('countdown').innerHTML += minutes + 'mins ';
+        document.getElementById('countdown').innerHTML += seconds + 'secs';
+    }
+    timer = setInterval(showRemaining, 1000);
+
+        function clickLink(link){
+            var home = document.getElementById("displayhome"),
+                spoilers = document.getElementById("displayspoilers"),
+                pics = document.getElementById("displaypics"),
+                death = document.getElementById("displaydeath"),
+                chat = document.getElementById("displaychat"),
+                array = [home, spoilers, pics, death, chat];
+
+            for(var i = 0; i<array.length; i++){
+                array[i].style.display = 'none';
+
+            }
+            document.getElementById(link).style.display = 'inline';
+
+        }
+
+        function displayDate(){
+            var d = new Date(),
+            year = d.getFullYear(),
+            months = ['January','Febuary','March','April','May','June','July','August','September','October','November','December'],
+            days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+            document.getElementById("date").innerHTML = months[d.getMonth()]+' '+d.getDate()+', '+year;
+        }
+
+        function slide() {
+            var imgSlide = new Array("./pic2.png", "./pic1.png");
+            var imgLength  = imgSlide.length;
+            var imgCurrent = 1;
+            var caption = new Array("March 17, 2016", "March 16, 2016");
+                if(imgCurrent >= imgLength) {
+                    imgCurrent = 1;
+            }
+                document.getElementById("date").style.display = 'none';
+                document.getElementById("mydiv").innerHTML = caption[imgCurrent];
+
+                document.imageslide.src = imgSlide[imgCurrent];
+                imgCurrent++;
+
+            }
+
+</script>
+
+    <style type="text/css">
+        body{
+            background-image:url(bkgrnd.jpg);
+            background-size:cover;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-left:0;
+            padding-left:0;
+            font-family:Courier;
+        }
+
+
+        header li{
+            display:inline;
+            margin:0 auto;
+            text-align:center;
+
+        }
+
+        header ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+            background-color:black;
+            width:100%;
+            position:fixed;
+            text-align: center;
+
+        }
+
+        header li a{
+            display:inline-block;
+            text-align:center;
+            padding:14px 16px;
+            text-decoration:none;
+            color:white;
+        }
+
+        header li a.active{
+            background-color:white;
+            color:black;
+        }
+        header li a:hover {
+            background-color:white;
+            color:black;
+        }
+
+        section {
+            border:1px solid white;
+            width:650px;
+            height:668px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -325px;
+            margin-left: -334px;
+            margin-bottom:-325px;
+            background-color: rgba(255, 255, 255, 0.3);
+            z-index:-1;
+            padding:3px;
+            overflow:scroll;
+
+        }
+
+        #seasons{
+            width:520px;
+            margin:0 auto;
+
+        }
+
+        section h3 {
+            text-align: center;
+            font-size:30px;
+        }
+
+        .seasonpic {
+            width:200px;
+        }
+
+        #displaypics a {
+            color:black;
+            border:1px solid black;
+            text-decoration: none;
+
+        }
+        #displaypics a:hover{
+            background-color:black;
+            color:white;
+        }
+
+        #displaypics img{
+            width:auto;
+            height:auto;
+            max-height: 450px;
+            max-width: 450px;
+
+        }
+
+        #displaypicscon{
+            display:block;
+            width:500px;
+            height:550px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        #displaybuttons {
+            margin:0 auto;
+            position:fixed;
+            vertical-align: bottom;
+            left:45%;
+        }
+        footer{
+            width:100%;
+            color:white;
+            background-color:black;
+            text-align:center;
+            clear:both;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+        }
+
+        #footerbutton{
+            background-color:black;
+            border:1px solid black;
+            color:white;
+        }
+
+        #countdate {
+            margin-top:50px;
+            display:inline;
+            z-index:1;
+            position:absolute;
+            padding:5px;
+            font-weight:bold;
+        }
+
+        section div{
+            display:none;
+        }
+
+        iframe{
+            margin-left:25px;
+            opacity:10;
+        }
+
+    </style>
+
+</head>
+<body onload="clickLink('displayhome'); displayDate();">
+    <div id="container">
+        <div id="nav">
+            <header>
+                <ul>
+                    <li><a href="#home" id="homelink" onclick="clickLink('displayhome')">Home</a></li>
+                    <li><a href="#pics" id="picslink" onclick="clickLink('displaypics')">Pic of the day</a></li>
+                    <li><a href="#death" id="deathlink" onclick="clickLink('displaydeath')">Deaths</a></li>
+                    <li><a href="#spoilers" id="spoilerslink" onclick="clickLink('displayspoilers')">Spoilers</a></li>
+                    <li><a href="#chat" id="chatlink" onclick="clickLink('displaychat')">Chat</a></li>
+                </ul>
+            </header>
+        </div>
+            <section>
+                <div id="displayhome">
+                    <h3 id="home">Home</h3>
+                    <table id="seasons">
+                        <tr>
+                            <tr><th>Season 6</th></tr>
+                            <td><ol>
+                            <li><strike>First Time Again</strike></li>
+                                <li><strike>JSS</strike></li>
+                                <li><Strike>Thank You</Strike></li>
+                                <li><strike>Here's Not Here</strike></li>
+                                <li><strike>Now</strike></li>
+                                <li><strike>Always Accountable</strike></li>
+                                <li><strike>Heads Up</strike></li>
+                                <li><strike>Start to Finish</strike></li>
+                                <li><strike>No Way Out</strike></li>
+                                <li><strike>The Next World</strike></li>
+                                <li><strike>Knots Untie</strike></li>
+                                <li><strike>Not Tomorrow Yet</strike></li>
+                                <li>Twice as Far</li>
+                                <li>East</li>
+                                <li>TBA</li>
+                                </ol>
+                            </td>
+                            <td><img class="seasonpic" src="./season6.jpg"</td>
+                        </tr>
+                        <tr>
+                            <tr><th>Season 5</th></tr>
+                            <td><ol>
+                                <li><strike>No Sanctuary</strike></li>
+                                <li><strike>Strangers</strike></li>
+                                <li><strike>Four Walls and a Roof</strike></li>
+                                <li><strike>Slabtown</strike></li>
+                                <li><strike>Self Help</strike></li>
+                                <li><strike>Consumed</strike></li>
+                                <li><strike>Crossed</strike></li>
+                                <li><strike>Coda</strike></li>
+                                <li><strike>What Happened and What's Going On</strike></li>
+                                <li><strike>Them</strike></li>
+                                <li><strike>The Distance</strike></li>
+                                <li><strike>Remember</strike></li>
+                                <li><strike>Forget</strike></li>
+                                <li><strike>Spend</strike></li>
+                                <li><strike>Try</strike></li>
+                                <li><strike>Conquer</strike></li>
+                                </ol>
+                            </td>
+                            <td><img class="seasonpic" src="./season5.jpg"</td>
+                        </tr>
+                        <tr>
+                            <tr><th>Season 4</th></tr>
+                            <td><ol>
+                                <li><strike>30 Days Without an Accident</strike></li>
+                                <li><strike>Infected</strike></li>
+                                <li><strike>Isolation</strike></li>
+                                <li><strike>Indifference</strike></li>
+                                <li><strike>Internment</strike></li>
+                                <li><strike>Live Bait</strike></li>
+                                <li><strike>Dead Weight</strike></li>
+                                <li><strike>Too Far Gone</strike></li>
+                                <li><strike>After</strike></li>
+                                <li><strike>Inmates</strike></li>
+                                <li><strike>Claimed</strike></li>
+                                <li><strike>Still</strike></li>
+                                <li><strike>Alone</strike></li>
+                                <li><strike>The Grove</strike></li>
+                                <li><strike>Us</strike></li>
+                                <li><strike>A</strike></li>
+                                </ol>
+                            </td>
+                            <td><img class="seasonpic" src="./season4.jpg"</td>
+                        </tr>
+                        <tr>
+                            <tr><th>Season 3</th></tr>
+                            <td><ol>
+                                <li><strike>Seed</strike></li>
+                                <li><strike>Sick</strike></li>
+                                <li><strike>Walk with Me</strike></li>
+                                <li><strike>Killer Within</strike></li>
+                                <li><strike>Say the Word</strike></li>
+                                <li><strike>Hounded</strike></li>
+                                <li><strike>When the Dead Come Knocking</strike></li>
+                                <li><strike>Made to Suffer</strike></li>
+                                <li><strike>The Suicide King</strike></li>
+                                <li><strike>Home</strike></li>
+                                <li><strike>I Ain't a Judas</strike></li>
+                                <li><strike>Clear</strike></li>
+                                <li><strike>Arrow on the Doorpost</strike></li>
+                                <li><strike>Prey</strike></li>
+                                <li><strike>This Sorrowful Life</strike></li>
+                                <li><strike>Welcome to the Tombs</strike></li>
+                                </ol>
+                            </td>
+                            <td><img class="seasonpic" src="./season3.jpeg"</td>
+                        </tr>
+                        <tr>
+                            <tr><th>Season 2</th></tr>
+                            <td><ol>
+                                <li><strike>What Lies Ahead</strike></li>
+                                <li><strike>Bloodletting</strike></li>
+                                <li><strike>Save the Last One</strike></li>
+                                <li><strike>Cherokee Rose</strike></li>
+                                <li><strike>Chupacabra</strike></li>
+                                <li><strike>Secrets</strike></li>
+                                <li><strike>Pretty Much Dead Already</strike></li>
+                                <li><strike>Nebraska</strike></li>
+                                <li><strike>Triggerfinger</strike></li>
+                                <li><strike>18 Miles Out</strike></li>
+                                <li><strike>Judge, Jury, Executioner</strike></li>
+                                <li><strike>Better Angels</strike></li>
+                                <li><strike>Beside the Dying Fire</strike></li>
+                                </ol></td>
+                            <td><img class="seasonpic" src="./season2.jpg"</td>
+                        </tr>
+                        <tr>
+                            <tr><th>Season 1</th></tr>
+                            <td><ol>
+                                <li><strike>Days Gone Bye</strike></li>
+                                <li><strike>Guts</strike></li>
+                                <li><strike>Tell It to the Frogs</strike></li>
+                                <li><strike>Vatos</strike></li>
+                                <li><strike>Wildfire</strike></li>
+                                <li><strike>TS-19</strike></li>
+                                </ol>
+                            </td>
+                            <td><img class="seasonpic" src="./season1.jpg"</td>
+                        </tr>
+                    </table>
+                </div>
+               <div id="displayspoilers">
+                    <h3 id="spoilers">Spoilers</h3>
+                </div><div id="displaydeath">
+                    <h3 id="death">Deaths</h3>
+                </div>
+                <div id="displaypics">
+                    <h3 id="pics">Picture of the day</h3>
+                    <span id="displaypicscon">
+                        <p id="date"></p>
+                        <p id ="mydiv"></p><br>
+                            <img name="imageslide" src="./pic2.png"/><br><br><br>
+
+                    <span id="displaybuttons">
+                        <a href="javascript:void(0)" onclick="slide();">Previous</a>
+                        <a href="javascript:void(0)" onclick="slide();">Next</a>
+                    </span>
+                    </span>
+                </div>
+                <div id="displaychat">
+                    <h3 id="chat">Live Chat</h3>
+                    <iframe src="http://chat.addachat.com/?bgs=on&bg=black&name=TwdFans&room=TWD Discussion&sidebar=on&format=on&images=on" height="500" width="600" name="gFrameTop"></iframe>
+                </div>
+            </section>
+        <footer>&#169; Jasmine Latendresse <button type="button" id="footerbutton" onclick="alert('I do not own anything from The Walking Dead. This website is for personal use only.')">&nabla;</button></footer>
+         <span id="countdate">
+            <p>Countdown until next episode</p>
+            <p id="countdown"></p>
+        </span>
+    </div>
+</body>
+</html>
