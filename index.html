@@ -57,16 +57,15 @@
             document.getElementById("date").innerHTML = months[d.getMonth()]+' '+d.getDate()+', '+year;
         }
 
-        function slide() {
-            var imgSlide = new Array("./pic2.png", "./pic1.png");
+            var imgSlide = ["./pic2.png", "./pic1.png"];
             var imgLength  = imgSlide.length;
             var imgCurrent = 1;
-            var caption = new Array("March 17, 2016", "March 16, 2016");
-                if(imgCurrent >= imgLength) {
+            var caption = ["March 17, 2016", "March 16, 2016"];
+        function slide() {
+            if(imgCurrent >= imgLength) {
                     imgCurrent = 1;
             }
-                document.getElementById("date").style.display = 'none';
-                document.getElementById("mydiv").innerHTML = caption[imgCurrent];
+
 
                 document.imageslide.src = imgSlide[imgCurrent];
                 imgCurrent++;
@@ -229,7 +228,7 @@
     </style>
 
 </head>
-<body onload="clickLink('displayhome'); displayDate();">
+<body onload="clickLink('displayhome'); displayDate(); slide();">
     <div id="container">
         <div id="nav">
             <header>
@@ -381,7 +380,7 @@
                     <span id="displaypicscon">
                         <p id="date"></p>
                         <p id ="mydiv"></p><br>
-                            <img name="imageslide" src="./pic2.png"/><br><br><br>
+                            <img name="imageslide" src="./pic2.png" alt="img"><br><br><br>
 
                     <span id="displaybuttons">
                         <a href="javascript:void(0)" onclick="slide();">Previous</a>
