@@ -57,10 +57,10 @@
             document.getElementById("date").innerHTML = months[d.getMonth()]+' '+d.getDate()+', '+year;
         }
 
-            var imgSlide = ["./pic2.png", "./pic1.png"];
+            var imgSlide = ["./pic3.png","./pic2.png", "./pic1.png"];
             var imgLength  = imgSlide.length;
-            var imgCurrent = 1;
-            var caption = ["March 17, 2016", "March 16, 2016"];
+            var imgCurrent = 0;
+            var caption = ["March 18, 2016","March 17, 2016", "March 16, 2016",];
         function slide() {
 
             if(imgCurrent >= imgLength) {
@@ -179,16 +179,16 @@
         #displaypicscon{
             display:block;
             width:500px;
-            height:550px;
+            height:500px;
             text-align: center;
             margin: 0 auto;
         }
 
         #displaybuttons {
-            margin:0 auto;
+
             position:fixed;
-            vertical-align: bottom;
-            left:45%;
+
+            left:47%;
         }
         footer{
             width:100%;
@@ -266,7 +266,7 @@
                                 <li>TBA</li>
                                 </ol>
                             </td>
-                            <td><img class="seasonpic" src="./season6.jpg"</td>
+                        <td><a href="https://www.youtube.com/watch?v=Va1UPrFXHKA" target="_blank"><img class="seasonpic" src="./season6.jpg"</a></td>
                         </tr>
                         <tr>
                             <tr><th>Season 5</th></tr>
@@ -289,7 +289,7 @@
                                 <li><strike>Conquer</strike></li>
                                 </ol>
                             </td>
-                            <td><img class="seasonpic" src="./season5.jpg"</td>
+                    <td><a href="https://www.youtube.com/watch?v=Pv4-F6Q-1FQ" target="_blank"><img class="seasonpic" src="./season5.jpg"</a></td>
                         </tr>
                         <tr>
                             <tr><th>Season 4</th></tr>
@@ -312,7 +312,7 @@
                                 <li><strike>A</strike></li>
                                 </ol>
                             </td>
-                            <td><img class="seasonpic" src="./season4.jpg"</td>
+                <td><a href="https://www.youtube.com/watch?v=FSi2fJALDyQ" target="_blank"><img class="seasonpic" src="./season4.jpg"</a></td>
                         </tr>
                         <tr>
                             <tr><th>Season 3</th></tr>
@@ -335,7 +335,7 @@
                                 <li><strike>Welcome to the Tombs</strike></li>
                                 </ol>
                             </td>
-                            <td><img class="seasonpic" src="./season3.jpeg"</td>
+                            <td><a href="https://www.youtube.com/watch?v=KnC9FLhM0WQ" target="_blank"><img class="seasonpic" src="season3.jpeg"></a></td>
                         </tr>
                         <tr>
                             <tr><th>Season 2</th></tr>
@@ -354,7 +354,7 @@
                                 <li><strike>Better Angels</strike></li>
                                 <li><strike>Beside the Dying Fire</strike></li>
                                 </ol></td>
-                            <td><img class="seasonpic" src="./season2.jpg"</td>
+                            <td><a href="https://www.youtube.com/watch?v=1OZ0mu8Ey6A" target="_blank"><img class="seasonpic" src="season2.jpg"></a></td>
                         </tr>
                         <tr>
                             <tr><th>Season 1</th></tr>
@@ -367,21 +367,30 @@
                                 <li><strike>TS-19</strike></li>
                                 </ol>
                             </td>
-                            <td><img class="seasonpic" src="./season1.jpg"</td>
+                        <td><a href="https://www.youtube.com/watch?v=GJRNHAJAcYg" target ="_blank"><img class="seasonpic" src="./season1.jpg"></a></td>
                         </tr>
                     </table>
                 </div>
                <div id="displayspoilers">
                     <h3 id="spoilers">Spoilers</h3>
-                </div><div id="displaydeath">
+                </div>
+                <div id="displaydeath">
                     <h3 id="death">Deaths</h3>
+                    <h4>Season 1</h4><hr style="color:black;">
+                    <table>
+                        <tr>
+                            <th>Character</th>
+                            <th>Cause</th>
+                            <th>Killed by</th>
+                        </tr>
+                    </table>
                 </div>
                 <div id="displaypics">
                     <h3 id="pics">Picture of the day</h3>
                     <span id="displaypicscon">
                         <p id="date"></p>
                         <p id ="mydate"></p><br>
-                            <img name="imageslide" src="./pic2.png" alt="img" id="picture"><br><br><br><br>
+                            <img name="imageslide" src="./pic3.png" alt="img" id="picture"><br><br><br>
 
                     <span id="displaybuttons">
                         <a href="javascript:void(0)" onclick="slide();">Previous</a>
