@@ -158,8 +158,10 @@
 
     #seasons{
         width:520px;
-        margin:0 auto;
+        margin-right:200px;
         padding-bottom:3px;
+        margin-top:-1100px;
+        float:right;
         }
 
     section h3 {
@@ -248,6 +250,43 @@
         background-color:black;
     }
 
+    #homecharacters img{
+        width:200px;
+    }
+
+    #homecharacters{
+        width:500px;
+        margin-top:300px;
+    }
+
+    .show{
+        position:relative;
+        display:inline-block;
+    }
+    .showcontent{
+        display:none;
+        position:relative;
+        background-color:black;
+        color:white;
+        min-width:160px;
+        box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+        float:right;
+        vertical-align:middle;
+        border:1px solid black;
+    }
+
+    .show:hover .showcontent{
+        display:block;
+    }
+
+    .descrition{
+        padding:10px;
+        margin:2px;
+    }
+    .description ul{
+        text-align: justify;
+    }
+
 </style>
 </head>
 
@@ -288,12 +327,53 @@
                         </td>
                     </tr>
                 </table>
-                <table>
+                <table id="homecharacters">
                     <tr>
                         <th>
-                            <div class="show">
-                            <img src="./rick" alt="rick">
-                            </div>
+                            <span class="show">
+                            <img src="./rick.jpg" alt="rick">
+                                <span class="showcontent">
+                                    <span clas="description">
+                                        <ul>
+                                            <li>Rick Grimes</li>
+                                            <li>Ringleader</li>
+                                            <li>Colt Python</li>
+                                        </ul>
+                                    </span>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="show">
+                                <img src="./daryl%20.jpg" alt="daryl">
+                                <span class="showcontent">
+                                    <span class="description">
+                                        <ul>
+                                            <li>Daryl Dixon</li>
+                                            <li>Archer</li>
+                                            <li>Crossbow</li>
+                                        </ul>
+                                    </span>
+                                </span>
+                            </span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="show">
+                                <img src="./carol.jpg" alt="carol">
+                                <span class="showcontent">
+                                    <span class="description">
+                                        <ul>
+                                            <li>Carol Peletier</li>
+                                            <li>Badass</li>
+                                            <li>Military Warrior Tanto &nbsp;</li>
+                                        </ul>
+                                    </span>
+                                </span>
+                            </span>
                         </th>
                     </tr>
                 </table>
@@ -313,7 +393,7 @@
                             <li><strike>The Next World</strike></li>
                             <li><strike>Knots Untie</strike></li>
                             <li><strike>Not Tomorrow Yet</strike></li>
-                            <li>Twice as Far</li>
+                            <li><strike>Twice as Far</strike></li>
                             <li>East</li>
                             <li>TBA</li>
                             </ol>
