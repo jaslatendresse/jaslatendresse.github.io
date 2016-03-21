@@ -5,7 +5,7 @@
     <script type="text/javascript">
 
         function showRemaining() {
-            var end = new Date('03/20/2016 9:00 PM');
+            var end = new Date('03/27/2016 9:00 PM');
             var _second = 1000;
             var _minute = _second * 60;
             var _hour = _minute * 60;
@@ -57,21 +57,24 @@
             document.getElementById("date").innerHTML = months[d.getMonth()]+' '+d.getDate()+', '+year;
         }
 
-            var imgSlide = ["./pic4.png", "./pic3.png","./pic2.png", "./pic1.png"];
-            var imgLength  = imgSlide.length;
-            var imgCurrent = 0;
-            var caption = ["March 19, 2016","March 18, 2016","March 17, 2016", "March 16, 2016",];
-        function slide() {
+        var dailyPhotos;
+        var today, img;
 
-            if(imgCurrent >= imgLength) {
-                    imgCurrent = 0;
-            }
-                document.getElementById("date").style.display = 'none';
-                document.getElementById("mydate").innerHTML = caption[imgCurrent];
-                document.getElementById("picture").src = imgSlide[imgCurrent];
-                imgCurrent++;
+        dailyPhotos = function(){
+            today = new Date();
+            weekday = today.getDay();
+            showImages = [];
+            myPhotos = ["./pic5.jpg", "./pic6.png","./pic1.png","./pic2.png","./pic3.png","./pic4.png"];
 
-            }
+            if(document.images) {
+                for(var i = 0; i<myPhotos.length; i++){
+                    showImages[i] = new Image();
+                    showImages[i].src = myPhotos[i];
+                } img = ((document.getElementById) ? document.getElementById("picoftheday"): document.images.picoftheday);
+                         img.src = showImages[weekday].src;
+                         img.alt = myPhotos[weekday];
+            }return false;
+        };
 
 </script>
 
@@ -169,39 +172,19 @@
         width:200px;
         }
 
-    #displaypics a {
-        background-color:black;
-        color:white;
-        border:1px solid black;
-        text-decoration: none;
-
-        }
-    #displaypics a:hover{
-        background-color:white;
-        color:black;
-        border:1px solid white;
-        }
-
     #displaypics img{
-        width:auto;
-        height:auto;
-        max-height: 450px;
-        max-width: 450px;
-
-        }
+        max-width:700px;
+        max-height:700px;
+    }
 
     #displaypicscon{
-        display:block;
-        width:500px;
-        height:550px;
-        text-align: center;
-        margin: 0 auto;
-        }
+        margin:0 auto;
+    }
 
     #displaybuttons {
         position:absolute;
         left:45%;
-        margin-bottom:-70px;
+        margin-bottom:-60px;
         }
 
     #countdate {
@@ -268,7 +251,7 @@
 </style>
 </head>
 
-<body onload="clickLink('displayhome'); displayDate(); slide();">
+<body onload="clickLink('displayhome'); displayDate(); imgdisplay();">
     <div id="headercon">
         <header>
             <img src="twdlogo.png" alt="logo">
@@ -537,16 +520,13 @@
                 </div>
             <div id="displaypics">
                 <h3 id="pics">Picture of the day</h3>
-                <span id="displaypicscon">
-                    <p id="date"></p>
-                    <p id ="mydate"></p><br>
-                        <img name="imageslide" src="./pic4.png" alt="img" id="picture"><br><br><br>
-                            <br><br><br><br><br><br><br><br><br>
-                <span id="displaybuttons">
-                    <a href="javascript:void(0)" onclick="slide();">Previous</a>
-                    <a href="javascript:void(0)" onclick="slide();">Next</a>
-                </span>
-                </span>
+                <table id="displaypicscon">
+                    <tr>
+                        <th id="date">
+                        </th>
+                    </tr>
+                    <tr><th><img id="picoftheday" src="./pic5.jpg"></th></tr>
+                </table>
             </div>
             <div id="displaychat">
                 <h3 id="chat">Live Chat</h3>
