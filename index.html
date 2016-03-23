@@ -57,6 +57,7 @@
             document.getElementById("date").innerHTML = months[d.getMonth()]+' '+d.getDate()+', '+year;
         }
 
+
         var dailyPhotos;
         var today, img;
 
@@ -158,9 +159,9 @@
 
     #seasons{
         width:520px;
-        margin-right:200px;
+        margin-right:100px;
         padding-bottom:3px;
-        margin-top:-1100px;
+        margin-top:-1620px;
         float:right;
         }
 
@@ -250,41 +251,40 @@
         background-color:black;
     }
 
-    #homecharacters img{
-        width:200px;
-    }
-
-    #homecharacters{
-        width:500px;
-        margin-top:300px;
-    }
-
     .show{
         position:relative;
         display:inline-block;
     }
     .showcontent{
         display:none;
-        position:relative;
-        background-color:black;
+        position:absolute;
+        background-color:rgba(0,0,0,0.5);
         color:white;
-        min-width:160px;
-        box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
-        float:right;
-        vertical-align:middle;
-        border:1px solid black;
+        max-width:200px;
+        text-align:center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-height:267px;
     }
 
     .show:hover .showcontent{
         display:block;
     }
 
-    .descrition{
-        padding:10px;
-        margin:2px;
+    .charlist{
+        list-style-type:none;
+        margin-top:290px;
+        display:block;
+
     }
-    .description ul{
-        text-align: justify;
+
+    .charlist li{
+        display:inline;
+    }
+    .charlist img{
+        width:200px;
     }
 
 </style>
@@ -311,7 +311,7 @@
     <section>
         <div id="displayhome">
                 <h3 id="home">Home</h3>
-                <table id="tablespoilers">
+             <table id="tablespoilers">
                     <tr>
                     <th>
                         <img src="./logo2.jpg" alt="logo">
@@ -323,60 +323,170 @@
                                 <li><a href="http://spoilthedead.com/forum/">Spoil The Dead</a></li>
                                 <br>
                                 <li><a href="http://www.unrealitytv.co.uk/author/jasmine/">Unreality Tv</a></li>
+                                <br>
+                                <li><a href="http://www.noisysunday.tumblr.com">Tumblr</a></li>
                             </ul>
                         </td>
                     </tr>
                 </table>
-                <table id="homecharacters">
-                    <tr>
-                        <th>
-                            <span class="show">
-                            <img src="./rick.jpg" alt="rick">
-                                <span class="showcontent">
-                                    <span clas="description">
-                                        <ul>
-                                            <li>Rick Grimes</li>
-                                            <li>Ringleader</li>
-                                            <li>Colt Python</li>
-                                        </ul>
-                                    </span>
-                                </span>
+            <span class="charlist">
+            <ul>
+                <li>
+                    <span class="show">
+                    <img src="./rick.jpg" alt="rick">
+                        <span class="showcontent">
+                            <span clas="description">
+                                <p><br><br><br>Rick Grimes<br><br>Ringleader<br><br>Colt Python</p>
                             </span>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <span class="show">
-                                <img src="./daryl%20.jpg" alt="daryl">
-                                <span class="showcontent">
-                                    <span class="description">
-                                        <ul>
-                                            <li>Daryl Dixon</li>
-                                            <li>Archer</li>
-                                            <li>Crossbow</li>
-                                        </ul>
-                                    </span>
-                                </span>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                 <span class="show">
+                    <img src="./daryl%20.jpg" alt="daryl">
+                        <span class="showcontent">
+                            <span class="description">
+                                <p><br><br><br>Daryl Dixon<br><br>Archer<br><br>Crossbow</p>
                             </span>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <span class="show">
-                                <img src="./carol.jpg" alt="carol">
-                                <span class="showcontent">
-                                    <span class="description">
-                                        <ul>
-                                            <li>Carol Peletier</li>
-                                            <li>Badass</li>
-                                            <li>Military Warrior Tanto &nbsp;</li>
-                                        </ul>
-                                    </span>
-                                </span>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span class="show">
+                    <img src="./carol.jpg" alt="carol">
+                        <span class="showcontent">
+                            <span class="description">
+                                <p><br><br><br>Carol Peletier<br><br>Badass<br><br>Military Warrior Tanto</p>
                             </span>
-                        </th>
-                    </tr>
-                </table>
+                        </span>
+                    </span>
+                </li>
+                <li><br></li>
+                <li>
+                    <span class="show">
+                    <img src="./carl.jpg" alt="carl">
+                        <span class="showcontent">
+                            <span class="description">
+                                <p><br><br><br>Carl Grimes<br><br>Kid<br><br>Beretta 92FS</p>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span class="show">
+                    <img src="./glenn.jpg" alt="glenn">
+                        <span class="showcontent">
+                            <span class="description">
+                                <p><br><br><br>Glenn Rhee<br><br>Guardian<br><br>Glock 19</p>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span class="show">
+                    <img src="./maggie.jpg" alt="maggie">
+                        <span class="showcontent">
+                            <span class="description">
+                                <p><br><br><br>Maggie Greene<br><br>Diplomate<br><br>SIG-Sauer P226</p>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li><br></li>
+                 <li>
+                    <span class="show">
+                    <img src="./aaron.jpg" alt="aaron">
+                        <span class="showcontent">
+                            <span class="description">
+                                <p><br><br><br>Aaron<br><br>Recruiter<br><br>Smith&and;Wesson Model 36</p>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span class="show">
+                    <img src="./abraham.jpg" alt="abraham">
+                        <span class="showcontent">
+                            <span class="description">
+                                <p><br><br><br>Abraham Ford<br><br>Ex-Surgeant<br><br>Mark I Desert Eagle</p>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span class="show">
+                    <img src="./eugene.jpg" alt="eugene">
+                        <span class="showcontent">
+                            <span class="description">
+                                <p><br><br><br>Eugene Porter<br><br>Imaginary Scientist<br><br>Knife</p>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li><br></li>
+                <li>
+                    <span class="show">
+                    <img src="./rosita.jpg" alt="rosita">
+                        <span class="showcontent">
+                            <span class="description">
+                                <p><br><br><br>Rosita Espinosa<br><br>Latina soldier<br><br>Remington 870 Wingmaster</p>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span class="show">
+                    <img src="./sasha.jpg" alt="sasha">
+                        <span class="showcontent">
+                            <span class="description">
+                                <p><br><br><br>Sasha Williams<br><br>Professional Headshooter<br><br>Custom AR-15</p>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                 <li>
+                    <span class="show">
+                    <img src="./morgan.jpg" alt="morgan">
+                        <span class="showcontent">
+                            <span class="description">
+                                <p><br><br><br>Morgan Jones<br><br>Peace Maker<br><br>Wooden Stick</p>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li><br></li>
+                 <li>
+                    <span class="show">
+                    <img src="./michonne.jpg" alt="michonne">
+                        <span class="showcontent">
+                            <span class="description">
+                                <p><br><br><br>Michonne<br><br>Samourai<br><br>Katana</p>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span class="show">
+                    <img src="./gabriel.jpg" alt="gabriel">
+                        <span class="showcontent">
+                            <span class="description">
+                                <p><br><br><br>Gabriel Stokes<br><br>Priest<br><br>Machete</p>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span class="show">
+                    <img src="./tara.jpg" alt="tara">
+                        <span class="showcontent">
+                            <span class="description">
+                                <p><br><br><br>Tara Chambler<br><br>Woodburry Survivor<br><br>FN FiveseveN</p>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+            </span>
                 <table id="seasons">
                     <tr>
                         <tr><th>Season 6</th></tr>
