@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TWD</title>
+<link rel='stylesheet' type='text/css' href='./style.css'>
+<script type="text/javascript" src="./script.js"></script>
+<meta charset="UTF-8">
+<style>
+    canvas {
+        background-color: #f1f1f1;
+        width: 900px;
+        height: 500px;
+        position: absolute;
+        border:1px solid black;
+        margin-top:2px;
+        margin-left:2px;
+    }
+    #divCanvas{
+        height:507px;
+        margin-left:250px;
+    }
+
+</style>
+
+<script>
+function loadCanvas(id){
+    var canvas = document.createElement('canvas');
+    var div = document.getElementById(id);
+    canvas.id = "cursor";
+    div.appendChild(canvas);
+}
+</script>
+</head>
+<body>
+    <div id="headercon">
+        <header>
+            <img src="twdlogo.png" alt="logo">
+            <span id="countdate">
+            <p>Countdown until next episode</p>
+            <p id="countdown"></p>
+        </span>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./deaths.html">Deaths</a></li>
+                <li><a href="./chat.html">Chat</a></li>
+            </ul>
+        </nav>
+     </div>
+    <section>
+        <div id="divCanvas"></div>
+        <script>loadCanvas("divCanvas");</script>
+    </section>
+    <div class="clearfooter"></div>
+    <footer>&#169; Jasmine Latendresse <button type="button" id="footerbutton" onclick="alert('I do not own anything from The Walking Dead. This website is for personal use only.')">&nabla;</button></footer>
+</body>
+</html>
+

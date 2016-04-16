@@ -34,7 +34,6 @@
         }
 
      #headercon{
-
             width:100%;
         }
     nav ul{
@@ -160,9 +159,10 @@
         color:white;
         text-align: center;
         width:100%;
-        position: relative;
+        position: absolute;
         bottom:0;
         height:70px;
+
         }
 
     .clearfooter{
