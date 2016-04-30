@@ -1,3 +1,27 @@
+var i = 0, imgsrc = new Array(), preload = new Array();
+imgsrc[0]="./pic1.png";
+imgsrc[1]="./pic2.png";
+imgsrc[2]="./pic3.png";
+imgsrc[3]="./pic4.png";
+imgsrc[4]="./pic5.png";
+imgsrc[5]="./pic6.png";
+for (var j=0;j<imgsrc.length;j++)
+{
+preload[j] = new Image;
+preload[j].src = imgsrc[j];
+}
+
+function startSlideshow()
+{
+    document.getElementById("picoftheday").src=imgsrc[i];
+    i++;
+    setTimeout("startSlideshow()",86400);
+    if(i==imgsrc.length)
+    {
+        i=0;
+    }
+}
+
 function showRemaining() {
     "use strict";
     var end = new Date('09/10/2016 9:00 PM'),
@@ -37,22 +61,3 @@ function displayDate() {
 
     document.getElementById("date").innerHTML = months[d.getMonth()] + ' ' + d.getDate() + ', ' + year;
 }
-
-var dailyPhotos, today, img;
-
-    dailyPhotos = function () {
-    "use strict";
-    today = new Date();
-    weekday = today.getDay();
-    showImages = [];
-    myPhotos = ["./pic5.jpg", "./pic6.png", "./pic1.png", "./pic2.png", "./pic3.png", "./pic4.png"];
-
-        if(document.images) {
-            for(var i = 0; i<myPhotos.length; i++){
-                showImages[i] = new Image();
-                showImages[i].src = myPhotos[i];
-            } img = ((document.getElementById) ? document.getElementById("picoftheday"): document.images.picoftheday);
-                         img.src = showImages[weekday].src;
-                         img.alt = myPhotos[weekday];
-            }return false;
-        };
