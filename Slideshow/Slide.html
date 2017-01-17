@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <style type="text/css">
+        #container{
+            margin: 0 auto;
+            border: 2px solid black;
+            text-align: center;
+            max-width:600px;
+            padding:20px;
+        }
+
+        .imagedisplay{
+            width:100%;
+        }
+
+        .arrows{
+            max-width:30px;
+            margin-top:10px;
+        }
+
+        .arrows:hover{
+           -webkit-border-radius: 30px;
+           -moz-border-radius: 30px;
+           border-radius: 30px;
+           background-color:#d3d3d3;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        /*
+        Creating an array containing the images wanted in the slideshow and
+        defining a var to hold the image index
+        */
+           var images = new Array('1.jpg', '2.jpg'),
+               imgNum = 0;
+
+        /*
+        Function taking an integer (either 1 or -1)
+        Incrementing the image index by 1 or -1 (in that case, decrementing...)
+        */
+        function change(j){
+            imgNum += j;
+            /*
+            If the index is greater than the lenght of the array, we reset the index to 0 so our slideshow can
+            display the first picture once again if the end is reached.
+            */
+            if(imgNum >= images.length){
+                imgNum = 0;
+            }
+            /*
+            If the index is less than 0, then we have reached the end using the previous button and
+            we want to go to the last picture which is at index or the array length - 1.
+            */
+            if(imgNum < 0){
+                imgNum = images.length - 1;
+            }
+
+            /*
+            Finally, once we have the index wanted, depending on what button is pressed, we change the src
+            of the present image to the src of the image in the array at index imgNum.
+            */
+            document.slide.src = images[imgNum];
+        }
+
+    </script>
+</head>
+<body>
+    <div id='container'>
+        <img class="imagedisplay" name="slide" src="./1.jpg">
+        <a href='javascript:void(0)' id='prev' onclick='change(-1);'><img class="arrows" src="previous.png"></a>
+        <a href='javascript:void(0)' id='next' onclick='change(1);'><img class="arrows" src="next.png"></button>
+    </div>
+</body>
+</html>
