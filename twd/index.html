@@ -3,11 +3,30 @@
     <title>TWD</title>
     <link rel='stylesheet' type='text/css' href='./style.css'>
     <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript">
+        
+        function getImage(id){
+            var season = document.getElementById(id);
+            if(id == 'season1')
+        }
+           var images = new Array('1.jpg', '2.jpg'),
+               imgNum = 0;
+
+        function change(j){
+            imgNum += j;
+            if(imgNum >= images.length){
+                imgNum = 0;
+            }
+            if(imgNum < 0){
+                imgNum = images.length - 1;
+            }
+            document.slide.src = images[imgNum];
+        }
+
+    </script>
     <meta charset="UTF-8">
 </head>
-
 <body onload="displayDate(); startSlideshow();">
-    <div id="headercon">
         <header>
             <img src="twdlogo.png" alt="logo">
             <span id="countdate">
@@ -17,16 +36,27 @@
         </header>
         <nav>
             <ul>
-                <li><a href="./twd/index.html">Home</a></li>
-                <li><a href="./twd/deaths.html">Deaths</a></li>
-                <li><a href="./twd/chat.html">Chat</a></li>
-                <li><a href="./twd/contact.html">Contact</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./deaths.html">Deaths</a></li>
+                <li><a href="./chat.html">Chat</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-     </div>
 <section>
-<div id="displayhome">
-<h3 id="home">Home</h3>
+    <div class="season1">
+        <div class="content1">
+            <h2><a href="https://www.youtube.com/watch?v=SmUz88zoIg0" target="_blank">Season 1</a></h2>
+            <ol>
+                <li><strike>Days Gone Bye</strike></li>
+                <li><strike>Guts</strike></li>
+                <li><strike>Tell It to the Frogs</strike></li>
+                <li><strike>Vatos</strike></li>
+                <li><strike>Wildfire</strike></li>
+                <li><strike>TS-19</strike></li>
+            </ol>
+            <h2>Deaths</h2>
+        </div>
+    </div>
     <div id="seasonswrap">
         <table id="seasonstable" cellspacing="30">
             <tr>
@@ -39,21 +69,25 @@
                 <th>Season 1</th>
             </tr>
             <tr>
-                <th><img src="./twd/negan.jpg" class="seasonpic"></th>
-                <th><a href="https://www.youtube.com/watch?v=Va1UPrFXHKA" target="_blank"><img class="seasonpic" src="./twd/season6.jpg" id="s6"></a></th>
-                <th><a href="https://www.youtube.com/watch?v=Pv4-F6Q-1FQ" target="_blank"><img class="seasonpic" src="./twd/season5.jpg"</a></th>
-                <th><a href="https://www.youtube.com/watch?v=FSi2fJALDyQ" target="_blank"><img class="seasonpic" src="./twd/season4.jpg"</a></th>
-                <th><a href="https://www.youtube.com/watch?v=KnC9FLhM0WQ" target="_blank"><img class="seasonpic" src="./twd/season3.jpeg"></a></th>
-                <th><a href="https://www.youtube.com/watch?v=1OZ0mu8Ey6A" target="_blank"><img class="seasonpic" src="./twd/season2.jpg"></a></th>
-                <th><a href="https://www.youtube.com/watch?v=GJRNHAJAcYg" target ="_blank"><img class="seasonpic" src="./twd/season1.jpg"></a></th>
+                <th><a href="https://www.youtube.com/watch?v=SmUz88zoIg0"><img src="./season7.jpg" class="seasonpic"></a></th>
+                <th><a href="https://www.youtube.com/watch?v=Va1UPrFXHKA" target="_blank"><img class="seasonpic" src="./season6.jpg" id="s6"></a></th>
+                <th><a href="https://www.youtube.com/watch?v=Pv4-F6Q-1FQ" target="_blank"><img class="seasonpic" src="./season5.jpg"</a></th>
+                <th><a href="https://www.youtube.com/watch?v=FSi2fJALDyQ" target="_blank"><img class="seasonpic" src="./season4.jpg"</a></th>
+                <th><a href="https://www.youtube.com/watch?v=KnC9FLhM0WQ" target="_blank"><img class="seasonpic" src="./season3.jpeg"></a></th>
+                <th><a href="https://www.youtube.com/watch?v=1OZ0mu8Ey6A" target="_blank"><img class="seasonpic" src="./season2.jpg"></a></th>
+                <th><a href="https://www.youtube.com/watch?v=GJRNHAJAcYg" target ="_blank"><img class="seasonpic" src="./season1.jpg"></a></th>
             </tr>
             <tr>
                 <td valign="top">
                 <ol>
-                <li>TBA</li>
-                <li>TBA</li>
-                <li>TBA</li>
-                <li>TBA</li>
+                <li><strike>The Day Will Come When You Won't Be</li>
+                <li><strike>The Well</li>
+                <li><strike>The Cell</li>
+                <li><strike>Service</li>
+                <li><strike>Go Getters</li>
+                <li><strike>Swear</li>
+                <li><strike>Sing Me a Song</li>
+                <li><strike>Hearts Still Beating</li>
                 <li>TBA</li>
                 <li>TBA</li>
                 <li>TBA</li>
@@ -168,39 +202,11 @@
             </tr>
         </table>
     </div>
-    <table id="tablespoilers">
-        <tr>
-        <th>
-            <img src="./logo2.jpg" alt="logo">
-        </th>
-            <td>
-                <ul>
-                    <li><a href="http://thespoilingdeadfans.tumblr.com/">The Spoiling Dead Fans</a></li>
-                    <br>
-                    <li><a href="http://spoilthedead.com/forum/">Spoil The Dead</a></li>
-                    <br>
-                    <li><a href="http://www.unrealitytv.co.uk/author/jasmine/">Unreality Tv</a></li>
-                    <br>
-                    <li><a href="http://www.noisysunday.tumblr.com">Tumblr</a></li>
-                </ul>
-            </td>
-        </tr>
-    </table>
-    <div id="picofthedaywrap">
-        <h4>Pic of the day</h4>
-        <table id="displaypicscon">
-            <tr>
-                <th id="date">
-                </th>
-            </tr>
-            <tr><th><img id="picoftheday" alt="pictureoftheday"></th></tr>
-        </table>
-    </div>
 <span class="charlist">
 <ul>
     <li>
         <span class="show">
-        <img src="./twd/rick.jpg" alt="rick">
+        <img src="./rick.jpg" alt="rick">
             <span class="showcontent">
                 <span clas="description">
                     <p><br><br><br>Rick Grimes<br><br>Ringleader<br><br>Colt Python</p>
@@ -210,7 +216,7 @@
     </li>
     <li>
      <span class="show">
-        <img src="./twd/daryl%20.jpg" alt="daryl">
+        <img src="./daryl%20.jpg" alt="daryl">
             <span class="showcontent">
                 <span class="description">
                     <p><br><br><br>Daryl Dixon<br><br>Archer<br><br>Crossbow</p>
@@ -220,7 +226,7 @@
     </li>
     <li>
         <span class="show">
-        <img src="./twd/carol.jpg" alt="carol">
+        <img src="./carol.jpg" alt="carol">
             <span class="showcontent">
                 <span class="description">
                     <p><br><br><br>Carol Peletier<br><br>Badass<br><br>Military Warrior Tanto</p>
@@ -230,7 +236,7 @@
     </li>
     <li>
         <span class="show">
-        <img src="./twd/carl.jpg" alt="carl">
+        <img src="./carl.jpg" alt="carl">
             <span class="showcontent">
                 <span class="description">
                     <p><br><br><br>Carl Grimes<br><br>Kid<br><br>Beretta 92FS</p>
@@ -240,7 +246,7 @@
     </li>
     <li>
         <span class="show">
-        <img src="./twd/glenn.jpg" alt="glenn">
+        <img src="./glenn.jpg" alt="glenn">
             <span class="showcontent">
                 <span class="description">
                     <p><br><br><br>Glenn Rhee<br><br>Guardian<br><br>Glock 19</p>
@@ -250,7 +256,7 @@
     </li>
     <li>
         <span class="show">
-        <img src="./twd/maggie.jpg" alt="maggie">
+        <img src="./maggie.jpg" alt="maggie">
             <span class="showcontent">
                 <span class="description">
                     <p><br><br><br>Maggie Greene<br><br>Diplomate<br><br>SIG-Sauer P226</p>
@@ -261,7 +267,7 @@
     <li><br></li>
      <li>
         <span class="show">
-        <img src="./twd/aaron.jpg" alt="aaron">
+        <img src="./aaron.jpg" alt="aaron">
             <span class="showcontent">
                 <span class="description">
                     <p><br><br><br>Aaron<br><br>Recruiter<br><br>Smith&and;Wesson Model 36</p>
@@ -271,7 +277,7 @@
     </li>
     <li>
         <span class="show">
-        <img src="./twd/abraham.jpg" alt="abraham">
+        <img src="./abraham.jpg" alt="abraham">
             <span class="showcontent">
                 <span class="description">
                     <p><br><br><br>Abraham Ford<br><br>Ex-Sergeant<br><br>Mark I Desert Eagle</p>
@@ -281,7 +287,7 @@
     </li>
     <li>
         <span class="show">
-        <img src="./twd/eugene.jpg" alt="eugene">
+        <img src="./eugene.jpg" alt="eugene">
             <span class="showcontent">
                 <span class="description">
                     <p><br><br><br>Eugene Porter<br><br>Imaginary Scientist<br><br>Knife</p>
@@ -291,7 +297,7 @@
     </li>
     <li>
         <span class="show">
-        <img src="./twd/rosita.jpg" alt="rosita">
+        <img src="./rosita.jpg" alt="rosita">
             <span class="showcontent">
                 <span class="description">
                     <p><br><br><br>Rosita Espinosa<br><br>Latina soldier<br><br>Remington 870 Wingmaster</p>
@@ -301,7 +307,7 @@
     </li>
     <li>
         <span class="show">
-        <img src="./twd/sasha.jpg" alt="sasha">
+        <img src="./sasha.jpg" alt="sasha">
             <span class="showcontent">
                 <span class="description">
                     <p><br><br><br>Sasha Williams<br><br>Professional Headshooter<br><br>Custom AR-15</p>
@@ -311,7 +317,7 @@
     </li>
     <li>
         <span class="show">
-        <img src="./twd/morgan.jpg" alt="morgan">
+        <img src="./morgan.jpg" alt="morgan">
             <span class="showcontent">
                 <span class="description">
                     <p><br><br><br>Morgan Jones<br><br>Peace Maker<br><br>Wooden Stick</p>
@@ -322,7 +328,7 @@
     <li><br></li>
      <li>
         <span class="show">
-        <img src="./twd/michonne.jpg" alt="michonne">
+        <img src="./michonne.jpg" alt="michonne">
             <span class="showcontent">
                 <span class="description">
                     <p><br><br><br>Michonne<br><br>Samourai<br><br>Katana</p>
@@ -332,7 +338,7 @@
     </li>
     <li>
         <span class="show">
-        <img src="./twd/gabriel.jpg" alt="gabriel">
+        <img src="./gabriel.jpg" alt="gabriel">
             <span class="showcontent">
                 <span class="description">
                     <p><br><br><br>Gabriel Stokes<br><br>Priest<br><br>Machete</p>
@@ -342,7 +348,7 @@
     </li>
     <li>
         <span class="show">
-        <img src="./twd/tara.jpg" alt="tara">
+        <img src="./tara.jpg" alt="tara">
             <span class="showcontent">
                 <span class="description">
                     <p><br><br><br>Tara Chambler<br><br>Woodburry Survivor<br><br>FN FiveseveN</p>
@@ -352,7 +358,6 @@
     </li>
 </ul>
 </span>
-    </div>
 </section>
 <div class="clearfooter"></div>
     <footer>&#169; Jasmine Latendresse <button type="button" id="footerbutton" onclick="alert('I do not own anything from The Walking Dead. This website is for personal use only.')">&nabla;</button></footer>
