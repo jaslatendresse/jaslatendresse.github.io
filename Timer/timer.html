@@ -41,6 +41,7 @@ Jasmine Latendresse
             hours = 0,
             timer = null;
         function starting() {
+            clearInterval('timer');
             timer = setInterval('setTime()', 1000);
         }
         function stopping() {
@@ -48,7 +49,7 @@ Jasmine Latendresse
             timer = null;
         }
         function reset() {
-            clearInterval('timer');
+            clearInterval(timer);
             mins = 0;
             secs = 0;
             hours = 0;

@@ -1,5 +1,5 @@
 body{
-    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-family: Impact;
     overflow:scroll;
     position:relative;
     padding:0 0 0 0;
@@ -112,7 +112,7 @@ nav li a:hover {
    text-align:center;
 }
  .deathimage{
-    width:100px;
+   width:200px;
 }
 
 .deathtable{
@@ -241,4 +241,21 @@ width:180px;
 
 .content1 ol{
     margin:0 auto;
+}
+
+.season2{
+    background-image: url('http://1.bp.blogspot.com/-VEbWGPx6D4g/UHStZGtDxuI/AAAAAAAAAPI/LttLFMzq6aY/s1600/the-walking-dead-season-3-poster-2012.jpg');
+    min-height:800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+
+.content2{
+    width:900px;
+    padding:70px;
+    font-size:20px;
+    color:white;
 }
