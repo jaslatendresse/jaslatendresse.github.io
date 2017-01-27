@@ -3,30 +3,9 @@
     <title>TWD</title>
     <link rel='stylesheet' type='text/css' href='./style.css'>
     <script type="text/javascript" src="./script.js"></script>
-    <script type="text/javascript">
-        
-        function getImage(id){
-            var season = document.getElementById(id);
-            if(id == 'season1')
-        }
-           var images = new Array('1.jpg', '2.jpg'),
-               imgNum = 0;
-
-        function change(j){
-            imgNum += j;
-            if(imgNum >= images.length){
-                imgNum = 0;
-            }
-            if(imgNum < 0){
-                imgNum = images.length - 1;
-            }
-            document.slide.src = images[imgNum];
-        }
-
-    </script>
     <meta charset="UTF-8">
 </head>
-<body onload="displayDate(); startSlideshow();">
+<body onload="displayDate();">
         <header>
             <img src="twdlogo.png" alt="logo">
             <span id="countdate">
@@ -54,27 +33,6 @@
                 <li><strike>Wildfire</strike></li>
                 <li><strike>TS-19</strike></li>
             </ol><br>
-            <img src="./deaths.png">
-            <table>
-                <tr>
-                    <td><img src="./littlegirl.jpg" alt="little girl" class="deathimage"></td>
-                    <td>Little Girl<br>Cause: Shot<br>Killed by: Rick Grimes</td>
-                </tr>
-                <tr>
-                    <td><img src="./edpeletier.jpg" alt="ed" class="deathimage"></td>
-                    <td>Ed Peletier<br>Cause: Bitten<br>Killed by: Walker</td>
-                </tr>
-                <tr>
-                    <td><img src="./amy.png" alt="amy" class="deathimage"></td>
-                    <td>Amy<br>Cause: Bitten<br>Killed by: Walker</td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="./jim.jpg" alt="alt" class="deathimage">
-                    </td>
-                    <td>Jim<br>Cause: Bitten<br>Killed by: Walker</td>
-                </tr>
-            </table>
         </div>
     </div>
     <div class="season2">
@@ -95,30 +53,6 @@
                 <li><strike>Better Angels</strike></li>
                 <li><strike>Beside the Dying Fire</strike></li>
             </ol><br>
-            <img src="./deaths.png">
-            <table>
-                <tr>
-                    <td><img src="./sophia.jpg" class="deathimage"></td>
-                    <td>Sophia Peletier<br>Cause: Bitten<br>Killed by: Walker</td>
-                    
-                    <td><img src="./shane.png" class="deathimage"></td>
-                    <td>Shane Walsh<br>Cause: Stabbed<br>Killed by: Rick Grimes</td>
-                </tr>
-                <tr>
-                    <td><img src="./otis.jpg" class="deathimage"></td>
-                    <td>Otis<br>Cause: Shot<br>Killed by: Shane Walsh</td>
-                </tr>
-                <tr>
-                    <td><img src="./dale.png"  class="deathimage"></td>
-                    <td>Amy<br>Cause: Bitten<br>Killed by: Walker</td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="./randall.jpg" class="deathimage">
-                    </td>
-                    <td>Jim<br>Cause: Broken neck<br>Killed by: Shane Walsh</td>
-                </tr>
-            </table>
         </div>
     </div>
     <div id="seasonswrap">
