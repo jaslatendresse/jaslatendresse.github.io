@@ -24,7 +24,7 @@ function startSlideshow()
 
 function showRemaining() {
     "use strict";
-    var end = new Date('09/10/2016 9:00 PM'),
+    var end = new Date('02/12/2017 9:00 PM'),
         second = 1000,
         minute = second * 60,
         hour = minute * 60,
