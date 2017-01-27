@@ -217,45 +217,16 @@ width:180px;
     margin:0 auto;
 }
 
-.season1{
-    background-image: url('http://wallpapercave.com/wp/0tHPJZz.jpg');
-    min-height:800px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:white;
-}
-
-.content1{
-    width:900px;
-    padding:70px;
-    font-size:20px;
-    color:white;
-}
-
-.content1 a{
-    text-decoration: none;
-    color:white;
-}
-
-.content1 ol{
+.season7wrap{
+    background-color:black;
     margin:0 auto;
 }
-
-.season2{
-    background-image: url('http://1.bp.blogspot.com/-VEbWGPx6D4g/UHStZGtDxuI/AAAAAAAAAPI/LttLFMzq6aY/s1600/the-walking-dead-season-3-poster-2012.jpg');
-    min-height:800px;
-    background-attachment: fixed;
+.season7{
+    background-image: url('http://www.ecranlarge.com/uploads/image/000/960/the-walking-dead-promo-12-saison-7-walking-dead-960681.jpg');
+    height:500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color:white;
 }
 
-.content2{
-    width:900px;
-    padding:70px;
-    font-size:20px;
-    color:white;
-}
+
