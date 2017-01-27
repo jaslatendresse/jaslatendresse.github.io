@@ -1,27 +1,3 @@
-var i = 0, imgsrc = new Array(), preload = new Array();
-imgsrc[0]="./twd/pic1.png";
-imgsrc[1]="./twd/pic2.png";
-imgsrc[2]="./twd/pic3.png";
-imgsrc[3]="./twd/pic4.png";
-imgsrc[4]="./twd/pic5.png";
-imgsrc[5]="./twd/pic6.png";
-for (var j=0;j<imgsrc.length;j++)
-{
-preload[j] = new Image;
-preload[j].src = imgsrc[j];
-}
-
-function startSlideshow()
-{
-    document.getElementById("picoftheday").src=imgsrc[i];
-    i++;
-    setTimeout("startSlideshow()",86400);
-    if(i==imgsrc.length)
-    {
-        i=0;
-    }
-}
-
 function showRemaining() {
     "use strict";
     var end = new Date('02/12/2017 9:00 PM'),
