@@ -219,7 +219,6 @@ width:180px;
 
 .season7wrap{
     background-color:black;
-    margin:0 auto;
 }
 .season7{
     background-image: url('http://www.ecranlarge.com/uploads/image/000/960/the-walking-dead-promo-12-saison-7-walking-dead-960681.jpg');
@@ -227,6 +226,16 @@ width:180px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.content7{
+    width:200px;
+    margin:0 auto;
+    color:white;
+}
+.content7 ul{
+    list-style-type:none;
+    margin: 0 0 0 0;
 }
 
 
