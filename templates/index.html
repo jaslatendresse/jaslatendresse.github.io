@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f1f1;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            float: left;
+            height: 100%;
+            top: 0;
+            background:white;
+        }
+
+        .projectcard {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            font-family: arial;
+            float: left;
+            height: 100%;
+            top: 0;
+            background:white;
+        }
+
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
+
+        button:hover,
+        a:hover {
+            opacity: 0.7;
+        }
+
+        .leftcolumn {
+            float: left;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 50%;
+            max-height:775px;
+            padding-left: 20px;
+            overflow:auto;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="leftcolumn">
+        <div class="card">
+            <img src="../static/images/profile_image.jpg" alt="Jasmine" style="width:100%">
+            <h1>Jasmine Latendresse</h1>
+            <hr>
+            <p class="title">About me</p>
+            <p style="text-align: justify; padding:10px;">I am currently a research-based master's degree student at
+                Concordia University in Software Engineering. I enjoy working out, spending time with my dog Popeye,
+                video
+                games and coding!</p>
+            <p class="title"><a class="title" href="../static/documents/cv.pdf">View my CV</a></p>
+            <div style="margin: 24px 0;">
+                <a href="https://github.com/jaslatendresse"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jasmine-latendresse-2835561a6/"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <p><button>Contact</button></p>
+        </div>
+    </div>
+    <div class="rightcolumn">
+        <div class="projectcard">
+            <h2>
+                <a href="http://tutify-259321.appspot.com/">TUTIFY</a>
+                <span>
+                    <a href="https://github.com/compgirl123/TutifySoen490"><i class="fa fa-github"></i></a>
+                </span>
+            </h2>
+            <h4>Capstone Project, 2020</h4>
+            <p>An application system for helping tutors and their students. Created for the graduating Software Engineering Course SOEN 490 Concordia University.</p>
+            <h4>Technologies used</h4>
+            <p>NodeJS, React, Express, MongoDB, Jest, Travis CI</p>
+        </div>
+        <div style="margin-top: 20px;" class="projectcard">
+            <h2>
+                RESTful API
+                <a href="https://github.com/jaslatendresse/SOEN487-Projects-1/tree/master/Assignment3"><i class="fa fa-github"></i></a>
+            </h2>
+            <h5>Web Services and Applications, Winter 2020</h5>
+            <p>A Weather System that displays the current weather of a location given the city's location or the geographical coordinates. In addition to the weather details, the time when this information was updated is displayed. 
+                The main purpose of this project was to create a small application with an exposed secure public API.
+            </p>
+            <h4>Technologies used</h4>
+            <p>Python, Flask, OpenWeather</p>
+        </div>
+        <div style="margin-top: 20px;" class="projectcard">
+            <h2>
+                RESTful and SOAP Web Services
+                <a href="https://github.com/jaslatendresse/SOEN487-Projects-1/tree/master/Assignment2"><i class="fa fa-github"></i></a>
+            </h2>
+            <h5>Web Services and Applications, Winter 2020</h5>
+            <p>A library system that allows to borrow and return books as well as manage users. The goal of this project was to create a small backend application that provides SOAP as well RESTful web services that support complex data types. Persistency was not implemented.</p>
+            <h4>Technologies used</h4>
+            <p>Java, Jersey, Metro, Tomcat, Javax, Java Servlets </p>
+        </div>
+        <div style="margin-top: 20px;" class="projectcard">
+            <h2>
+                RESTful and SOAP Web Services
+                <a href="https://github.com/jaslatendresse/SOEN487-Projects-1/tree/master/Assignment2"><i class="fa fa-github"></i></a>
+            </h2>
+            <h5>Web Services and Applications, Winter 2020</h5>
+            <p>A library system that allows to borrow and return books as well as manage users. The goal of this project was to create a small backend application that provides SOAP as well RESTful web services that support complex data types. Persistency was not implemented.</p>
+            <h4>Technologies used</h4>
+            <p>Java, Jersey, Metro, Tomcat, Javax, Java Servlets </p>
+        </div>
+    </div>
+</body>
+
+</html>
