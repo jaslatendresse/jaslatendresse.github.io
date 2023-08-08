@@ -184,8 +184,6 @@ Awards 🌟
   </li>
 
 </ul>
-
- <hr style="height:2em; margin:0em; visibility:hidden;" />
   
 <!--Invited Talks 🏛️
 ======
@@ -212,8 +210,6 @@ Teaching 👨‍🏫
     <span style="float:right; font-size:80%; color:#7a7a7a;">Concordia University, 2023</span> <br>
   </li>
 </ul>
-
- <hr style="height:2em; margin:0em; visibility:hidden;" />
   
 Student Supervision 👨‍🏫
 ======
