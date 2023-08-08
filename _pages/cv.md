@@ -112,7 +112,7 @@ Work experience 💼
     </p>
     AI Research Intern
     <div style="color:#7a7a7a">
-      I developed a writing assistant for public call for tenders using an LLM.
+      I developed an LLM-based writing assistant for public call for tenders.
     </div>
   </div>
 </div>
