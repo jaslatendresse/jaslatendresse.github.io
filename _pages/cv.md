@@ -96,7 +96,6 @@ Education 🎓
 </div>
  <hr style="height:2em; margin:0em; visibility:hidden;" />
 
-
 Work experience 💼
 ======
 <!-- MCN -->
@@ -119,7 +118,7 @@ Work experience 💼
 </div>
  <hr style="height:1em; margin:0em; visibility:hidden;" />
 
-<!-- resident -->
+<!-- Concordia -->
 <div style="display:flex;">
 
   <div style="flex:0.5; padding-right:5%">
@@ -141,7 +140,6 @@ Work experience 💼
 
 Awards 🌟
 ======
-
 <ul>
   <li>
     <b>Graduate Students' Association (GSA) Conference Funding</b>
@@ -202,9 +200,9 @@ Awards 🌟
   <span style="float:right; font-size:80%; color:#7a7a7a;">2020</span> <br>
   <i>Department of Statistical Sciences, University of Toronto, Canada</i>
 </li>
-</ul>-->
+</ul>
 
- <hr style="height:2em; margin:0em; visibility:hidden;" />
+ <hr style="height:2em; margin:0em; visibility:hidden;" />-->
   
 Teaching 👨‍🏫
 ======
@@ -221,14 +219,14 @@ Student Supervision 👨‍🏫
 ======
 <ul>
   <li>
-    Supervised a MITACS intern. Developed a global visualization tool for GitHub code contributions.
+    MITACS intern. Developed a global visualization tool for GitHub code contributions.
     <span style="float:right; font-size:80%; color:#7a7a7a;">Concordia University, 2023</span> <br>
   </li>
 </ul>
 
 <ul>
   <li>
-    Supervised a MITACS intern. Developed a GitHub action bot that provides a deep analysis of a repository's dependencies. 
+    MITACS intern. Developed a GitHub action bot that provides an analysis of a project's dependencies. 
     <span style="float:right; font-size:80%; color:#7a7a7a;">Concordia University, 2022</span> <br>
   </li>
 </ul>
