@@ -226,7 +226,7 @@ Student Supervision 👨‍🏫
 
 <ul>
   <li>
-    MITACS intern. Developed a GitHub action bot that provides an analysis of a project's dependencies. 
+    MITACS intern. Developed a GitHub action bot for analyzing a project's dependencies. 
     <span style="float:right; font-size:80%; color:#7a7a7a;">Concordia University, 2022</span> <br>
   </li>
 </ul>
