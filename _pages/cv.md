@@ -107,8 +107,8 @@ Work experience 💼
 
   <div style="flex:4;">
     <p style="margin:0px">
-      <b style="font-size: 130%;">Ministère de la cybersécurité et du Numérique</b>
-      <span style="float:right; font-size:80%; color:#7a7a7a;">Jun 2023 - Dec 2023</span>
+      <b style="font-size: 130%;">Ministère de la cybersécurité et du numérique</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">Jun - Dec 2023</span>
     </p>
     AI Research Intern
     <div style="color:#7a7a7a">
