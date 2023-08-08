@@ -40,7 +40,7 @@ Education 🎓
 <div style="display:flex;">
 
   <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/resume/concordia.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+    <img src="{{ site.url }}/images/concordia.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
   </div>
 
   <div style="flex:4;">
@@ -78,7 +78,7 @@ Education 🎓
  <hr style="height:2em; margin:0em; visibility:hidden;" />
 
 <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/uqam.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+    <img src="{{ site.url }}/images/uqam.jpeg" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
   </div>
   
  <div style="flex:4;">
@@ -91,7 +91,6 @@ Education 🎓
       CGPA: 3.7/4.3
     </div>
   </div>
-</div>
  <hr style="height:2em; margin:0em; visibility:hidden;" />
 
 
@@ -101,7 +100,7 @@ Work experience 💼
 <div style="display:flex;">
 
   <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/qc.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+    <img src="{{ site.url }}/images/mcn.jpeg" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
   </div>
 
   <div style="flex:4;">
