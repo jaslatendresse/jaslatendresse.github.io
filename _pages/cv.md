@@ -48,9 +48,9 @@ Education 🎓
       <b style="font-size: 130%;">Concordia University</b>
       <span style="float:right; font-size:80%; color:#7a7a7a;">2020 - 2021</span>
     </p>
-    MASc. Software Engineering
+    MASc Sofware Engineering
     <div style="color:#7a7a7a">
-      Fast-track to PhD, CGPA: 4.23/4.3
+      CGPA: 4.23/4.3
     </div>
   </div>
 </div>
@@ -69,17 +69,21 @@ Education 🎓
       <b style="font-size: 130%;">Concordia University</b>
       <span style="float:right; font-size:80%; color:#7a7a7a;">2015 - 2020</span>
     </p>
-    BEng. Software Engineering
+    BEng Software Engineering
     <div style="color:#7a7a7a">
       CGPA: 3.29/4.3
     </div>
   </div>
+</div>
+ <hr style="height:2em; margin:0em; visibility:hidden;" />
 
-<div style="flex:0.5; padding-right:5%">
+ <div style="display:flex;">
+
+  <div style="flex:0.5; padding-right:5%">
     <img src="{{ site.url }}/images/uqam.jpeg" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
   </div>
-  
- <div style="flex:4;">
+
+  <div style="flex:4;">
     <p style="margin:0px">
       <b style="font-size: 130%;">Université du Québec à Montréal</b>
       <span style="float:right; font-size:80%; color:#7a7a7a;">2014 - 2015</span>
@@ -89,8 +93,7 @@ Education 🎓
       CGPA: 3.7/4.3
     </div>
   </div>
-  </div>
-  
+</div>
  <hr style="height:2em; margin:0em; visibility:hidden;" />
 
 
