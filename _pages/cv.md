@@ -112,7 +112,7 @@ Work experience 💼
     </p>
     AI Research Intern
     <div style="color:#7a7a7a">
-      I worked an LLM-based public bid writing assistant.
+      I worked on an LLM-based public bid writing assistant.
     </div>
   </div>
 </div>
