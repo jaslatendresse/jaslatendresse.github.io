@@ -233,5 +233,6 @@ Academic Services 📚
   <li>
   <b>Junior Reviewer</b><br>
   <i>MSR 2023</i>
+  <i>MSR 2024</i>
   </li>
 </ul> 
