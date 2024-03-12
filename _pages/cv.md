@@ -112,7 +112,7 @@ Work experience 💼
     </p>
     AI Research Intern
     <div style="color:#7a7a7a">
-      I worked an LLM-based public bid writing assistant.
+      I worked on an LLM-based public bid writing assistant.
     </div>
   </div>
 </div>
@@ -232,6 +232,7 @@ Academic Services 📚
 <ul>
   <li>
   <b>Junior Reviewer</b><br>
-  <i>MSR 2023</i>
+  <i>MSR 2023<br></i>
+  <i>MSR 2024</i>
   </li>
 </ul> 
