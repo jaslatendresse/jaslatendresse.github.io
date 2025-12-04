@@ -1,0 +1,75 @@
+[
+  {
+    "title": "How Robust are LLM-Generated Library Imports? An Empirical Study using Stack Overflow",
+    "authors": "Jasmine Latendresse, SayedHassan Khatoonabadi, Emad Shihab",
+    "venue": "IEEE Transactions on Software Engineering (TSE) - Revise and Resubmit",
+    "year": "2025",
+    "tldr": "We prompted six state-of-the-art LLMs to solve Python problems sourced from Stack Overflow to extract and analyze the types of libraries they import, the characteristics of those libraries, and the extent to which these libraries are usable out-of-the-box.",
+    "tags": ["Software Engineering", "SE4AI"],
+    "links": [
+      { "label": "Preprint", "url": "https://arxiv.org/pdf/2507.10818?" },
+      { "label": "Data", "url": "https://zenodo.org/records/15880965" }
+    ]
+  },
+  {
+    "title": "The Software Librarian: Python Package Insights for Copilot",
+    "authors": "Jasmine Latendresse, SayedHassan Khatoonabadi, Emad Shihab",
+    "venue": "2025 IEEE/ACM 47th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)",
+    "year": "2025",
+    "tldr": "The Software Librarian is a tool that provides real-time information about Python packages recommended as part of the generated code by GitHub Copilot, including license details, deprecation status, and package health. Our tool ensures that the recommended packages are not only valid but are also suitable for integration.",
+    "tags": ["Software Ecosystems", "Software Engineering", "Python"],
+    "links": [
+      { "label": "PDF", "url": "https://das.encs.concordia.ca/pdf/lat2025softlib.pdf" },
+      { "label": "Code", "url": "https://github.com/jaslatendresse/software-librarian-prod" },
+      { "label": "Tool", "url": "https://marketplace.visualstudio.com/items?itemName=jaslatendresse.software-librarian" }
+    ]
+  },
+  {
+    "title": "An Exploratory Study on Machine Learning Model Management ",
+    "authors": "Jasmine Latendresse, Samuel Abedu, Ahmad Abdellatif, Emad Shihab",
+    "venue": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
+    "year": "2024",
+    "tldr": "This paper provides a clear definition of ML model management activities, processes, and techniques, based on an empirical analysis of 227 ML repositories. We propose a taxonomy of 16 model management activities and identify 12 uniques challenges related to documentation maintenance, bug management, and versioning.",
+    "tags": ["Machine Learning", "Software Engineering"],
+    "links": [
+      { "label": "PDF", "url": "https://aabdllatif.github.io/assets/pdf/jlatmodelmanagement.pdf" },
+      { "label": "Data", "url": "https://zenodo.org/records/10602341" }
+    ]
+  },
+  {
+    "title": "Code Mapper: Mapping the Global Contributions of OSS  ",
+    "authors": "Thomas Le Tourneau, Jasmine Latendresse, Ahmad Abdellatif, Emad Shihab",
+    "venue": "2024 IEEE/ACM 46th International Conference on Software Engineering (ICSE)",
+    "year": "2024",
+    "tldr": "Code Mapper is a tool that identifies the location of contributors in GitHub projects. To enable users to explore the global influence of their projects, Code Mapper visually presents the geographic distribution of open source project contributors.",
+    "tags": ["Software Ecosystems", "Software Engineering"],
+    "links": [
+      { "label": "PDF", "url": "https://das.encs.concordia.ca/pdf/letourneau2024code.pdf" },
+      { "label": "Code", "url": "https://codemapper.dev/" }
+    ]
+  },
+  {
+    "title": "Not All Dependencies are Equal: An Empirical Study on Production Dependencies in NPM ",
+    "authors": "Jasmine Latendresse, Suhaib Mujahid, Diego Elias Costa, Emad Shihab",
+    "venue": "Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering",
+    "year": "2022",
+    "tldr": "Dependencies used in production are more sensitive to security exposure and should be prioritized. However, current tools lack the appropriate support in identifying production dependencies.",
+    "tags": ["Software Ecosystems", "Dependencies", "Software Engineering", "NPM"],
+    "links": [
+      { "label": "PDF", "url": "https://arxiv.org/abs/2207.14711" },
+      { "label": "Data", "url": "https://zenodo.org/records/6518765" }
+    ]
+  },
+  {
+    "title": "How Effective is Continuous Integration in Indicating Single-Statement Bugs? ",
+    "authors": "Jasmine Latendresse, Rabe Abdalkareem, Diego Elias Costa, Emad Shihab",
+    "venue": "2021 IEEE/ACM 18th International Conference on Mining Software Repositories (MSR)",
+    "year": "2021",
+    "tldr": "Continuous integration is not the right medium to capture single statement bugs.",
+    "tags": ["Continuous Integration", "Software Engineering"],
+    "links": [
+      { "label": "PDF", "url": "https://rabeabdalkareem.github.io/files/17-Jasmine_MSR2021.pdf" },
+      { "label": "Data", "url": "https://zenodo.org/records/4606679" }
+    ]
+  }
+]

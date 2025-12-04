@@ -1,0 +1,19 @@
+{
+  "name": "Jasmine Latendresse",
+  "title": "PhD Candidate in Software Engineering",
+  "location": "Montreal, Canada",
+  "avatar": "assets/image22.jpg",
+  "bio": "I am a Ph.D. candidate in Software Engineering working under the supervision of <a href=\"https://www.concordia.ca/faculty/emad-shihab.html\" target=\"_blank\" rel=\"noopener\">Emad Shihab</a> in the <a href=\"https://das.encs.concordia.ca/\" target=\"_blank\" rel=\"noopener\">DAS Lab</a> at Concordia University in Montreal, Canada. I am also part of <a href=\"https://se4ai.org/\" target=\"_blank\" rel=\"noopener\">CREATE SE4AI</a>, a training program funded by NSERC.<br/><br/>My research interests span software supply chain topics and software engineering for AI (SE4AI). I am currently a research intern at the <a href=\"https://www.nbc.ca/\" target=\"_blank\" rel=\"noopener\">National Bank of Canada</a>, working on integrating AI in ITSM processes.",
+  "interests": [
+    "SE4AI",
+    "Software supply chain",
+    "Software ecosystems",
+    "AI & reliability"
+  ],
+  "social": [
+    { "label": "Email", "url": "mailto:jasmine.latendresse@mail.concordia.ca", "icon": "✉️" },
+    { "label": "Google Scholar", "url": "https://scholar.google.ca/citations?user=EDeAYeYAAAAJ&hl", "icon": "🎓" },
+    { "label": "GitHub", "url": "https://github.com/jaslatendresse", "icon": "🐙" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/jasmine-latendresse-2835561a6/", "icon": "💼" }
+  ]
+}

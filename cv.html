@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasmine Latendresse | CV</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="brand" id="brand">Jasmine Latendresse</div>
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="publications.html">Publications</a>
+          <a href="academic.html">Academic</a>
+          <a href="experience.html">Experience</a>
+          <a href="cv.html">CV</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card text">
+        <h1 style="margin-top:0;">Curriculum Vitae</h1>
+        <p style="color:var(--muted);">
+          Drop a <code>cv.pdf</code> file in the project root and it will show below. The download button links to the same file.
+        </p>
+        <p>
+          <a class="pill" href="cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+        </p>
+        <object class="cv-embed" data="cv.pdf" type="application/pdf">
+          <p>Your CV PDF will appear here. If you do not see it, make sure <code>cv.pdf</code> is in the repository root.</p>
+        </object>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2025 Jasmine Latendresse. All rights reserved.</span>
+    </footer>
+
+    <script src="assets/main.js"></script>
+  </body>
+</html>

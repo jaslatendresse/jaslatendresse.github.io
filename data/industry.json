@@ -1,0 +1,18 @@
+[
+  {
+    "organization": "National Bank of Canada (NBC)",
+    "role": "AI Researcher",
+    "location": "Montreal, QC",
+    "period": "April 2025 – Present",
+    "summary": "Designed an AI-driven approach to improve change-request risk assessment in IT service management; built and evaluated ML and LLM models to classify risk levels and generate explanations; analyzed large-scale change and incident datasets to surface actionable risk signals; contributed to a prototype decision-support system for early risk detection.",
+    "links": []
+  },
+  {
+    "organization": "Ministère de la Cybersécurité et du Numérique (MCN), Gouvernement du Québec",
+    "role": "AI Scientist",
+    "location": "Montreal, QC",
+    "period": "2023 – 2025",
+    "summary": "Led a team of AI engineers to design, deploy, and evaluate an LLM-based writing assistant for government employees; hosted and optimized open-source LLMs locally (e.g., llama.cpp) to satisfy privacy and security constraints; conducted benchmarking and reliability testing to select and tune the final model for French and English use cases.",
+    "links": []
+  }
+]

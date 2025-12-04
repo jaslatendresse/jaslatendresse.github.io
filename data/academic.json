@@ -1,0 +1,111 @@
+{
+  "education": [
+    {
+      "institution": "Concordia University",
+      "program": "PhD Software Engineering",
+      "period": "2021 – Present",
+      "gpa": "4.25/4.3"
+    },
+    {
+      "institution": "Concordia University",
+      "program": "MASc Software Engineering",
+      "period": "2020 – 2021",
+      "gpa": "4.23/4.3"
+    },
+    {
+      "institution": "Concordia University",
+      "program": "BEng Software Engineering",
+      "period": "2015 – 2020",
+      "gpa": "3.29/4.3"
+    },
+    {
+      "institution": "Université du Québec à Montréal",
+      "program": "B.Sc. Mathématiques",
+      "period": "2014 – 2015",
+      "gpa": "3.7/4.3"
+    }
+  ],
+  "awards": [
+    {
+      "name": "Graduate Students' Association (GSA) Conference Funding",
+      "year": "2023",
+      "organization": "Concordia University"
+    },
+    {
+      "name": "Concordia Golden Key Scholarship",
+      "year": "2022",
+      "organization": "Golden Key International Honour Society"
+    },
+    {
+      "name": "Conference and Exposition Award",
+      "year": "2022",
+      "organization": "Concordia University"
+    },
+    {
+      "name": "Concordia University Retired Faculty and Staff Graduate Award",
+      "year": "2021",
+      "organization": "Concordia University"
+    },
+    {
+      "name": "Doctoral Fellowship",
+      "year": "2021",
+      "organization": "Concordia University"
+    },
+    {
+      "name": "Merit Scholarship",
+      "year": "2020",
+      "organization": "Concordia University"
+    },
+    {
+      "name": "Instructional Technology Award",
+      "year": "2020",
+      "organization": "Concordia University"
+    }
+  ],
+  "teaching": [
+    {
+      "role": "Teaching Assistant",
+      "course": "Engineering AI-based Software Systems",
+      "institution": "Concordia University",
+      "year": "2023"
+    }
+  ],
+  "supervision": [
+    {
+      "description": "MITACS intern. Developed a Visual Studio Code extension for analyzing dependencies generated in GitHub Copilot code.",
+      "institution": "Concordia University",
+      "year": "2022"
+    },
+    {
+      "description": "MITACS intern. Developed a global visualization tool for GitHub code contributions.",
+      "institution": "Concordia University",
+      "year": "2023"
+    },
+    {
+      "description": "MITACS intern. Developed a GitHub action bot for analyzing a project's dependencies.",
+      "institution": "Concordia University",
+      "year": "2022"
+    }
+  ],
+  "service": [
+    {
+      "role": "Junior Reviewer",
+      "venue": "MSR",
+      "year": "2023, 2024, 2025"
+    },
+    {
+      "role": "Journal Reviewer",
+      "venue": "TOSEM",
+      "year": "2025"
+    }
+  ],
+  "guestLectures": [
+    {
+      "title": "SOEN 692: Generative Artificial Intelligence for Software Engineering",
+      "instructor": "Dr. Diego Elias Costa",
+      "institution": "Concordia University",
+      "sessions": "Winter 2023, Winter 2024"
+    }
+  ],
+  "talks": []
+}
