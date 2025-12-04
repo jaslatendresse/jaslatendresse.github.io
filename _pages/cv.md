@@ -148,7 +148,7 @@ Work experience 💼
   <div style="flex:4;">
     <p style="margin:0px">
       <b style="font-size: 130%;">Concordia University</b>
-      <span style="float:right; font-size:80%; color:#7a7a7a;">Sep 2019 - Sep 2020</span>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">Sep 2020 - Present</span>
     </p>
     Research assistant
     <div style="color:#7a7a7a">
