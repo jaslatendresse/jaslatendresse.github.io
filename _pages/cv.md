@@ -132,7 +132,7 @@ Work experience 💼
     </p>
     AI Research Intern
     <div style="color:#7a7a7a">
-      Worked on an LLM-based public bid writing assistant.
+      Worked on an LLM-based writing assistant.
     </div>
   </div>
 </div>
@@ -152,7 +152,7 @@ Work experience 💼
     </p>
     Research assistant
     <div style="color:#7a7a7a">
-      Research on empirical software engineering and SE4AI
+      Research on empirical software engineering and SE4AI.
     </div>
   </div>
 </div>
