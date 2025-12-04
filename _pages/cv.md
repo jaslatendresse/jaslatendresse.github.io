@@ -11,7 +11,7 @@ redirect_from:
 
 <!-- taken from https://emiliendupont.github.io/resume/  -->
 
-Updated August 2023.
+Updated December 2025.
 
 Education 🎓
 ======
@@ -98,6 +98,26 @@ Education 🎓
 
 Work experience 💼
 ======
+<!-- BNC -->
+<div style="display:flex;">
+
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/bnc.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;">Banque Nationale du Canada</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">April 2025 - Present</span>
+    </p>
+    AI Research Intern
+    <div style="color:#7a7a7a">
+      Worked on an AI-based ITSM risk assessment system.
+    </div>
+  </div>
+</div>
+ <hr style="height:1em; margin:0em; visibility:hidden;" />
+
 <!-- MCN -->
 <div style="display:flex;">
 
@@ -112,7 +132,7 @@ Work experience 💼
     </p>
     AI Research Intern
     <div style="color:#7a7a7a">
-      I worked on an LLM-based public bid writing assistant.
+      Worked on an LLM-based public bid writing assistant.
     </div>
   </div>
 </div>
@@ -215,6 +235,13 @@ Student Supervision 👨‍🏫
 ======
 <ul>
   <li>
+    MITACS intern. Developed a Visual Studio Code extension for analyzing dependencies generated in GitHub Copilot code.
+    <span style="float:right; font-size:80%; color:#7a7a7a;">Concordia University, 2022</span> <br>
+  </li>
+</ul>
+
+<ul>
+  <li>
     MITACS intern. Developed a global visualization tool for GitHub code contributions.
     <span style="float:right; font-size:80%; color:#7a7a7a;">Concordia University, 2023</span> <br>
   </li>
@@ -233,6 +260,21 @@ Academic Services 📚
   <li>
   <b>Junior Reviewer</b><br>
   <i>MSR 2023<br></i>
-  <i>MSR 2024</i>
+  <i>MSR 2024</i><br>
+  <i>MSR 2025</i>
+  </li>
+  <li>
+  <b>Journal</b><br>
+  <i>TOSEM 2025<br></i>
   </li>
 </ul> 
+
+Guest Lectures 📚
+======
+<ul>
+  <li>
+  <b>SOEN 692: Generative Artificial Intelligence for Software Engineering, Dr. Diego Elias Costa</b><br>
+  <i>Winter 2023<br></i>
+  <i>Winter 2024</i><br>
+  </li>
+</ul>
