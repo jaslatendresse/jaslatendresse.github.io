@@ -3,7 +3,7 @@
   "title": "PhD Candidate in Software Engineering",
   "location": "Montreal, Canada",
   "avatar": "assets/image22.jpg",
-  "bio": "I am a Ph.D. candidate in Software Engineering working under the supervision of <a href=\"https://www.concordia.ca/faculty/emad-shihab.html\" target=\"_blank\" rel=\"noopener\">Emad Shihab</a> in the <a href=\"https://das.encs.concordia.ca/\" target=\"_blank\" rel=\"noopener\">DAS Lab</a> at Concordia University in Montreal, Canada. I am also part of <a href=\"https://se4ai.org/\" target=\"_blank\" rel=\"noopener\">CREATE SE4AI</a>, a training program funded by NSERC.<br/><br/>My research interests span software supply chain topics and software engineering for AI (SE4AI). I am currently a research intern at the <a href=\"https://www.nbc.ca/\" target=\"_blank\" rel=\"noopener\">National Bank of Canada</a>, working on integrating AI in ITSM processes.",
+  "bio": "I am a Postdoctoral Researcher in Software Engineering at Concordia University, working with <a href=\"https://www.concordia.ca/faculty/emad-shihab.html\" target=\"_blank\" rel=\"noopener\">Emad Shihab</a> in the <a href=\"https://das.encs.concordia.ca/\" target=\"_blank\" rel=\"noopener\">DAS Lab</a>. I am also a graduate of <a href=\"https://se4ai.org/\" target=\"_blank\" rel=\"noopener\">CREATE SE4AI</a>, an NSERC-funded training program.<br/><br/>My research focuses on empirical software engineering, software ecosystems and dependency management, and AI-assisted software development. I also contribute to the Concordia University–National Bank of Canada research partnership, where my current work focuses on AI agents and agentic systems for software engineering and enterprise applications.",
   "interests": [
     "SE4AI",
     "Software supply chain",
