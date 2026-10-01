@@ -106,23 +106,45 @@ async function renderAcademic() {
   const supervisionList = document.getElementById("academic-supervision");
   const serviceList = document.getElementById("academic-service");
   const lecturesList = document.getElementById("academic-lectures");
-  if (!educationList && !awardsList && !teachingList && !supervisionList && !serviceList && !lecturesList) return;
-  try {
-    const data = await loadJSON("data/academic.json");
-    if (educationList) {
-      educationList.innerHTML = "";
-      (data.education || []).forEach((ed) => {
-        const item = document.createElement("li");
-        item.className = "item";
-        item.innerHTML = `
-          <div class="item-title">${ed.institution}</div>
-          <div class="item-meta">${ed.program}${ed.period ? " • " + ed.period : ""}</div>
-          ${ed.gpa ? `<div class="item-notes">CGPA: ${ed.gpa}</div>` : ""}
-        `;
-        educationList.appendChild(item);
-      });
-      if (!educationList.innerHTML) educationList.innerHTML = "<li>No education listed yet.</li>";
-    }
+  if (educationList) {
+  educationList.innerHTML = "";
+
+  (data.education || []).forEach((ed) => {
+    const item = document.createElement("li");
+    item.className = "item";
+
+    item.innerHTML = `
+      <div class="item-title">${ed.institution}</div>
+      <div class="item-meta">${ed.program}${ed.period ? " • " + ed.period : ""}</div>
+
+      ${ed.gpa ? `<div class="item-notes">CGPA: ${ed.gpa}</div>` : ""}
+
+      ${ed.dissertation ? `
+        <div class="item-notes">
+          <strong>Dissertation:</strong> <em>${ed.dissertation}</em>
+        </div>
+      ` : ""}
+
+      ${ed.supervisor ? `
+        <div class="item-notes">
+          <strong>Supervisor:</strong> ${ed.supervisor}
+        </div>
+      ` : ""}
+
+      ${ed.outcome ? `
+        <div class="item-notes">
+          <strong>Defense outcome:</strong> ${ed.outcome}
+        </div>
+      ` : ""}
+    `;
+
+    educationList.appendChild(item);
+  });
+
+  if (!educationList.innerHTML) {
+    educationList.innerHTML = "<li>No education listed yet.</li>";
+  }
+}
 
     if (awardsList) {
       awardsList.innerHTML = "";
