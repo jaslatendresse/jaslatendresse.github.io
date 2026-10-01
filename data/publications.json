@@ -1,5 +1,17 @@
 [
   {
+    "title": "Evaluating Large Language Models for Dependency-Maintenance Patch Generation",
+    "authors": "Jasmine Latendresse, Emad Shihab",
+    "venue": "ACM Transactions on Software Engineering and Methodology",
+    "year": "2026",
+    "tldr": "We evaluated four instruction-tuned LLMs on real-world JavaScript dependency updates to assess whether they can generate patches that are applicable, correct, and complete across manifest and source-code changes.",
+    "tags": ["Software Engineering", "SE4AI"],
+    "links": [
+      { "label": "Preprint", "url": "" },
+      { "label": "Data", "url": "https://zenodo.org/records/21084173" }
+    ]
+  },
+  {
     "title": "How Robust are LLM-Generated Library Imports? An Empirical Study using Stack Overflow",
     "authors": "Jasmine Latendresse, SayedHassan Khatoonabadi, Emad Shihab",
     "venue": "IEEE Transactions on Software Engineering (TSE) - Revise and Resubmit",
