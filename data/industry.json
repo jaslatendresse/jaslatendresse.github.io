@@ -1,9 +1,17 @@
 [
   {
+  "organization": "Concordia University × National Bank of Canada (NBC)",
+  "role": "Postdoctoral Researcher",
+  "location": "Montreal, QC",
+  "period": "2026 – Present",
+  "summary": "Coordinate research activities within the Concordia University–National Bank of Canada research partnership; supervise and mentor student researchers; guide project planning, empirical methodology, experimental design, and evaluation; and facilitate collaboration between academic and industry research teams.",
+  "links": []
+  },
+  {
     "organization": "National Bank of Canada (NBC)",
     "role": "AI Researcher",
     "location": "Montreal, QC",
-    "period": "April 2025 – Present",
+    "period": "April 2025 – 2026",
     "summary": "Designed an AI-driven approach to improve change-request risk assessment in IT service management; built and evaluated ML and LLM models to classify risk levels and generate explanations; analyzed large-scale change and incident datasets to surface actionable risk signals; contributed to a prototype decision-support system for early risk detection.",
     "links": []
   },
