@@ -2,7 +2,7 @@
   {
     "title": "Evaluating Large Language Models for Dependency-Maintenance Patch Generation",
     "authors": "Jasmine Latendresse, Emad Shihab",
-    "venue": "ACM Transactions on Software Engineering and Methodology",
+    "venue": "Submitted to ACM Transactions on Software Engineering and Methodology",
     "year": "2026",
     "tldr": "We evaluated four instruction-tuned LLMs on real-world JavaScript dependency updates to assess whether they can generate patches that are applicable, correct, and complete across manifest and source-code changes.",
     "tags": ["Software Engineering", "SE4AI"],
