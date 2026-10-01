@@ -17,6 +17,20 @@ function setActiveNav() {
   });
 }
 
+async function renderSiteMeta() {
+  const copyrightYears = document.querySelectorAll("[data-copyright-year]");
+  if (!copyrightYears.length) return;
+  try {
+    const data = await loadJSON("data/site.json");
+    if (!data.copyrightYear) return;
+    copyrightYears.forEach((year) => {
+      year.textContent = data.copyrightYear;
+    });
+  } catch (err) {
+    console.error(err);
+  }
+}
+
 async function renderProfile() {
   const container = document.querySelector("[data-profile]");
   if (!container) return;
@@ -106,45 +120,50 @@ async function renderAcademic() {
   const supervisionList = document.getElementById("academic-supervision");
   const serviceList = document.getElementById("academic-service");
   const lecturesList = document.getElementById("academic-lectures");
-  if (educationList) {
-  educationList.innerHTML = "";
+  if (!educationList && !awardsList && !teachingList && !supervisionList && !serviceList && !lecturesList) return;
 
-  (data.education || []).forEach((ed) => {
-    const item = document.createElement("li");
-    item.className = "item";
+  try {
+    const data = await loadJSON("data/academic.json");
 
-    item.innerHTML = `
-      <div class="item-title">${ed.institution}</div>
-      <div class="item-meta">${ed.program}${ed.period ? " • " + ed.period : ""}</div>
+    if (educationList) {
+      educationList.innerHTML = "";
 
-      ${ed.gpa ? `<div class="item-notes">CGPA: ${ed.gpa}</div>` : ""}
+      (data.education || []).forEach((ed) => {
+        const item = document.createElement("li");
+        item.className = "item";
 
-      ${ed.dissertation ? `
-        <div class="item-notes">
-          <strong>Dissertation:</strong> <em>${ed.dissertation}</em>
-        </div>
-      ` : ""}
+        item.innerHTML = `
+          <div class="item-title">${ed.institution}</div>
+          <div class="item-meta">${ed.program}${ed.period ? " • " + ed.period : ""}</div>
 
-      ${ed.supervisor ? `
-        <div class="item-notes">
-          <strong>Supervisor:</strong> ${ed.supervisor}
-        </div>
-      ` : ""}
+          ${ed.gpa ? `<div class="item-notes">CGPA: ${ed.gpa}</div>` : ""}
 
-      ${ed.outcome ? `
-        <div class="item-notes">
-          <strong>Defense outcome:</strong> ${ed.outcome}
-        </div>
-      ` : ""}
-    `;
+          ${ed.dissertation ? `
+            <div class="item-notes">
+              <strong>Dissertation:</strong> <em>${ed.dissertation}</em>
+            </div>
+          ` : ""}
 
-    educationList.appendChild(item);
-  });
+          ${ed.supervisor ? `
+            <div class="item-notes">
+              <strong>Supervisor:</strong> ${ed.supervisor}
+            </div>
+          ` : ""}
 
-  if (!educationList.innerHTML) {
-    educationList.innerHTML = "<li>No education listed yet.</li>";
-  }
-}
+          ${ed.outcome ? `
+            <div class="item-notes">
+              <strong>Defense outcome:</strong> ${ed.outcome}
+            </div>
+          ` : ""}
+        `;
+
+        educationList.appendChild(item);
+      });
+
+      if (!educationList.innerHTML) {
+        educationList.innerHTML = "<li>No education listed yet.</li>";
+      }
+    }
 
     if (awardsList) {
       awardsList.innerHTML = "";
@@ -258,6 +277,7 @@ async function renderIndustry() {
 }
 
 setActiveNav();
+renderSiteMeta();
 renderProfile();
 renderPublications();
 renderAcademic();
